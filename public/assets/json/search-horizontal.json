@@ -1,0 +1,80 @@
+{
+  "dashboard": [
+    {
+      "name": "Dashboard",
+      "icon": "ri-home-line",
+      "url": "dashboard"
+    },
+    {
+      "name": "Damage Data",
+      "icon": "ri-database-2-line",
+      "url": "logbook/9/dashboard"
+    }
+  ],
+  "logbook": [
+    {
+      "name": "FDPS-RDPS",
+      "icon": "ri-book-2-line",
+      "url": "logbook/1/dashboard"
+    },
+    {
+      "name": "AMSS-ADPS",
+      "icon": "ri-book-2-line",
+      "url": "logbook/2/dashboard"
+    },
+    {
+      "name": "SURVEILLANCE",
+      "icon": "ri-book-2-line",
+      "url": "logbook/3/dashboard"
+    },
+    {
+      "name": "NAVIGATION",
+      "icon": "ri-book-2-line",
+      "url": "logbook/4/dashboard"
+    },
+    {
+      "name": "RADIO-KOMUNIKASI",
+      "icon": "ri-book-2-line",
+      "url": "logbook/5/dashboard"
+    },
+    {
+      "name": "SSJJ",
+      "icon": "ri-book-2-line",
+      "url": "logbook/6/dashboard"
+    },
+    {
+      "name": "LISTRIK",
+      "icon": "ri-book-2-line",
+      "url": "logbook/7/dashboard"
+    },
+    {
+      "name": "BANGUNAN",
+      "icon": "ri-book-2-line",
+      "url": "logbook/8/dashboard"
+    }
+  ],
+  "manage": [
+    {
+      "name": "Manage Tools",
+      "icon": "ri-tools-line",
+      "url": "manage/tools"
+    },
+    {
+      "name": "Manage Position",
+      "icon": "ri-briefcase-4-line",
+      "url": "manage/position"
+    },
+    {
+      "name": "Manage Users",
+      "icon": "ri-user-settings-line",
+      "url": "manage/users"
+    }
+  ],
+  "logout": [
+    {
+      "name": "Logout",
+      "icon": "ri-logout-box-line",
+      "url": "account/logout"
+    }
+  ]
+}

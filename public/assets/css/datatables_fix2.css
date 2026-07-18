@@ -1,0 +1,30 @@
+
+.table-responsive {
+    max-height: 90vh; /* Adjust the max-height to fit the content within the viewport */
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures table fits within its container */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 12px; /* Adjust font size */
+    word-wrap: break-word; /* Ensure text wraps within cell */
+    word-break: break-word; /* Ensure text breaks within cell */
+    white-space: normal; /* Allow text to wrap to the next line */
+    overflow-wrap: break-word; /* Ensure text wraps within cell */
+}
+
+.dataTables_info {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.dataTables_wrapper .dataTables_paginate {
+    margin-bottom: 10px; /* Sesuaikan dengan margin yang diinginkan */
+    margin-right: 10px;
+}

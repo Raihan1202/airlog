@@ -1,0 +1,12 @@
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    margin-right: 50px;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 20px;
+}

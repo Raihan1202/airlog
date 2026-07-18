@@ -1,0 +1,38 @@
+/* --- Navbar Search Suggestion (Light Mode) --- */
+  .tt-menu.navbar-search-suggestion {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    z-index: 1055;
+  }
+
+  .tt-menu.navbar-search-suggestion .suggestion {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .tt-menu.navbar-search-suggestion .suggestion.active,
+  .tt-menu.navbar-search-suggestion .suggestion:hover {
+    background-color: #f5f5f9;
+    color: #000;
+  }
+
+  /* --- Navbar Search Suggestion (Dark Mode) --- */
+  .dark-style .tt-menu.navbar-search-suggestion {
+    background-color: #2b2c40;
+    border: 1px solid #444;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.25);
+  }
+
+  .dark-style .tt-menu.navbar-search-suggestion .suggestion {
+    background-color: #2b2c40;
+    color: #eee;
+  }
+
+  .dark-style .tt-menu.navbar-search-suggestion .suggestion.active,
+  .dark-style .tt-menu.navbar-search-suggestion .suggestion:hover {
+    background-color: #43455b;
+    color: #fff;
+  }
