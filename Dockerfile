@@ -64,4 +64,4 @@ RUN composer run-script post-autoload-dump --no-interaction
 EXPOSE 80
 
 # Set entrypoint / CMD (menggunakan garis miring di awal jalur)
-ENTRYPOINT ["/usr/local/bin/start.sh"]
+CMD ["/usr/local/bin/start.sh"]
