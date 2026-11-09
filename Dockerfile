@@ -49,7 +49,8 @@ COPY --from=frontend /app/public/build public/build
 # Copy Apache VirtualHost configuration
 COPY docker/apache/000-default.conf /etc/apache2/sites-available/000-default.conf
 
-# Copy startup script
+# Copy startup script and grant execution permissions
+COPY docker/start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
 # Set proper permissions for Laravel
@@ -62,5 +63,5 @@ RUN composer run-script post-autoload-dump --no-interaction
 
 EXPOSE 80
 
-# Set entrypoint / CMD
-ENTRYPOINT ["usr/local/bin/start.sh"]
+# Set entrypoint / CMD (menggunakan garis miring di awal jalur)
+ENTRYPOINT ["/usr/local/bin/start.sh"]
