@@ -50,7 +50,6 @@ COPY --from=frontend /app/public/build public/build
 COPY docker/apache/000-default.conf /etc/apache2/sites-available/000-default.conf
 
 # Copy startup script
-COPY docker/start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
 # Set proper permissions for Laravel
