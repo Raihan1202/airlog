@@ -23,12 +23,11 @@ echo "🔄 Running database migrations..."
 php artisan migrate --force --no-interaction
 
 # Seed database on first deploy (only if users table is empty)
-USER_COUNT=$(php artisan tinker --execute="echo App\Models\User::count();" 2>/dev/null | tail -1 | tr -d '[:space:]')
-if [ "$USER_COUNT" = "0" ] || [ -z "$USER_COUNT" ]; then
-    echo "🌱 Seeding database with initial data..."
+echo "🌱 Checking initial database records..."
+if php artisan db:seed --class=DatabaseSeeder --help > /dev/null 2>&1; then
     php artisan db:seed --force --no-interaction || true
 else
-    echo "✅ Database already has data, skipping seed."
+    echo "⚠️ DatabaseSeeder not found or skipped."
 fi
 
 # Cache configuration for performance
